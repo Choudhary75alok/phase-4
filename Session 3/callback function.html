@@ -20,6 +20,27 @@
         //passing greeting to callback variable
         //function as an argument
         fullname("Alok","Choudhary",greeting);
+
+// function srq(){
+//     return function cal(x){
+//         return(x*x);
+//     }
+//     function function_sqr2(var1 ,callback){
+//         callback(var1);
+//     }
+//     var ans=sqr();
+//     ans(5);
+    
+// }
+function add(a,b){
+    var result=a+b;
+    return function (){
+        console.log(result);
+    } 
+}
+var func=add(32,20);
+ func();
+
     </script>
 </body>
 </html>
